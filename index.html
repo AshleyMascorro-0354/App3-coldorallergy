@@ -30,6 +30,7 @@ Known Issues:
 v.1: question 1 runs well and recieves input from yes and no buttons. Question 2 added
 v.2: question 2 yes and no buttons unresponsive, content loads but does not allow advancement to page 3 
 v.3: page command updated to allow app to proceed through all 4 questions asked, results page not properly displaying
+v.4: question buttons updated from html to java for accurate counting
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -110,11 +111,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         <p>Are your eyes itchy or watery?</p>   
-		
-	<a href="#two" class="w3-btn w3-black"> yes </a>
-	<a href="#two" class="w3-btn w3-black"> no </a>
-    	</div>
-</div>
+		  
+	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+         <a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+ </div><!-- /content -->
+
 
 <div class="page" id="two">
 	<div id="header" class="w3-container w3-flat-carrot">
@@ -124,9 +125,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 	<p>Do you have a fever?</p>
 		
-	<a href="#three" class="w3-btn w3-black"> yes </a>
-	<a href="#three" class="w3-btn w3-black"> no </a>
-	</div>
+		  
+	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+         <a href="#three"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+ </div><!-- /content -->
 </div>	
 	
 <div class="page" id="three">
@@ -137,8 +139,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p>Do you have a sore throat?</p>
 		
-	<a href="#four" class="w3-btn w3-black"> yes </a>
-	<a href="#four" class="w3-btn w3-black"> no </a>
+	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+        <a href="#four"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+ </div><!-- /content -->
 	</div>
 </div>	
 	
@@ -150,8 +153,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p>Are your sympotoms seasonal or chronic?</p>
 		
-	<a href="#five" class="w3-btn w3-black"> yes </a>
-	<a href="#five" class="w3-btn w3-black"> no </a>
+		  
+	<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+         <a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+ </div><!-- /content -->
 	</div>
 </div>	
 	
