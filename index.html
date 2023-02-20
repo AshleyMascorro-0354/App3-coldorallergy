@@ -8,6 +8,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
 Authors in chronological order of contribution:
 Ashley Mascorro 
 Author 1 
+comment: author name added
 
 Tim Riedel
 Author 2
@@ -22,6 +23,7 @@ triedel@utexas.edu
 Student Researcher: 
 Ashley Mascorro 
 ashleymascorro@utexas.edu
+Comment: author added with contact info 
  
 Brief Description of Goal of Code:
 This code is intended to help student researchers develop coding skills to later develop a diagnostic app that uses buttons, mutiple pages, variables, functions, and comments.
@@ -31,6 +33,7 @@ v.1: question 1 runs well and recieves input from yes and no buttons. Question 2
 v.2: question 2 yes and no buttons unresponsive, content loads but does not allow advancement to page 3 
 v.3: page command updated to allow app to proceed through all 4 questions asked, results page not properly displaying
 v.4: question buttons updated from html to java for accurate counting
+v.5: reults page still unresponsive to results entry
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -115,7 +118,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		  
 	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
          <a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
- </div><!-- /content -->
+ </div><! created question one / added buttons -->
 
 
 <div class="page" id="two">
@@ -129,7 +132,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		  
 	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
          <a href="#three"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
- </div><!-- /content -->
+ </div><!created question two /added buttons -->
 </div>	
 	
 <div class="page" id="three">
@@ -142,7 +145,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
         <a href="#four"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
- </div><!-- /content -->
+ </div><created question three /buttons added -->
 	</div>
 </div>	
 	
@@ -157,18 +160,24 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		  
 	<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
          <a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
- </div><!-- /content -->
+ </div><question four added /buttons created -->
 	</div>
 </div>	
 	
 <div class="page" id="five">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
+		<!--"results" page added to reflect allergy or cold result-->
 	</div>
+		
+		<p id="lastPage></p>
+	<!--"last page" added to proceed command -->
 	
 	<div id="content" class="w3-container">
-		<p>Below are your results</p>
-	var resultText = document.getElementById("sick");
+		<p>Please cliack on the results button below to get your results</p>
+	<!-- changed "below are your results" to "please click "results" button below to get your results"-->											  
+	<a href="#five" onclick="computeResults();" class="w3-btn w3-black">Results</a>
+	<!-- created button command to display results-->
  
 	</div>
 </div>		
