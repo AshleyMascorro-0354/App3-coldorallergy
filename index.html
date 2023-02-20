@@ -75,7 +75,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	         var resultText = document.getElementById("RESULTS");
 	       /* calculation and result display function added*/
 	       /* function created for resultsto be displayed on last page of site*/
-	     resultText.innerHTML = "Probability of allergies = " + allergyPercent + % + <br> Probability of cold = " + coldPercent + "%";
+	     resultText.innerHTML = "Probability of allergies = " + allergyPercent + "<br> Probability of cold = " + coldPercent;
 	}
 		
 
@@ -188,7 +188,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<p>Please click on the results button below to get your results</p>
 	<!-- changed "below are your results" to "please click "results" button below to get your results"-->											  
-	<a onclick="computeResults();" class="w3-btn w3-black">Results</a> <!--Got rid of unnecessary href-->
+	<a class="w3-btn w3-black" onclick="computeResults();"> Results</a> <!--Got rid of unnecessary href-->
 	<p id="RESULTS" ></p> <!--Display results in text-->
 	<!-- created button command to display results-->
  
