@@ -67,9 +67,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	
 	function computeResults(){ 
-	         var allergyPercent = (allergy_count/6)*100;
+	         var allergyPercent = (allergy_count/4)*100;
 	         /* created equation for allergy percentage calculation*/
-	         var coldPercent = (cold_count/6)*100;
+	         var coldPercent = (cold_count/4)*100;
 	        /* euation created for cold percentage calculation*/
 	         var resultText = document.getElementById("lastPage");
 	       /* calculation and result display function added*/
@@ -184,7 +184,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--"last page" added to proceed command -->
 	
 	<div id="content" class="w3-container">
-		<p>Please cliack on the results button below to get your results</p>
+		<p>Please click on the results button below to get your results</p>
 	<!-- changed "below are your results" to "please click "results" button below to get your results"-->											  
 	<a href="#five" onclick="computeResults();" class="w3-btn w3-black">Results</a>
 	<!-- created button command to display results-->
